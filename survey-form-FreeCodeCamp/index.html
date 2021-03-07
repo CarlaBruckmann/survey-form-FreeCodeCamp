@@ -1,56 +1,219 @@
 <!DOCTYPE html>
 <html>
-    <!DOCTYPE html>
-    <html lang="pt-br">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="Carla Bruckmann" />
-        <link
-          rel="stylesheet"
-          href="../survey-form-FreeCodeCamp/assets/css/style.css"
-        />
-   
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="../survey-form-FreeCodeCamp/assets/layout/favicon/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="../survey-form-FreeCodeCamp/assets/layout/favicon/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="../survey-form-FreeCodeCamp/assets/layout/favicon/favicon-16x16.png"
-        />
-        <link
-          rel="manifest"
-          href="../survey-form-FreeCodeCamp/assets/layout/favicon/site.webmanifest"
-        />
-        <title>Survey Form</title>
-      </head>
-<body>
-    <header>
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="author" content="Carla Bruckmann" />
+      <link
+        rel="stylesheet"
+        href="../survey-form-FreeCodeCamp/assets/css/style.css"
+      />
+
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="../survey-form-FreeCodeCamp/assets/layout/favicon/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="../survey-form-FreeCodeCamp/assets/layout/favicon/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="../survey-form-FreeCodeCamp/assets/layout/favicon/favicon-16x16.png"
+      />
+      <link
+        rel="manifest"
+        href="../survey-form-FreeCodeCamp/assets/layout/favicon/site.webmanifest"
+      />
+      <title>Survey Form</title>
+    </head>
+    <body>
+      <header>
         <div id="wrapper-title">
-            <h1 id="title">Survey!</h1>
-            <p id="description">We would like to hear your thoughts.
-                Your feedback will be a great help to improve our services.</p>
+          <h1 id="title">Survey!</h1>
+          <p id="description">
+            We would like to hear your thoughts. Your feedback will be a great
+            help to improve our services.
+          </p>
         </div>
         <div id="wrapper-img">
-          <img src="../survey-form-FreeCodeCamp/assets/img/img-header.png"
-          alt="illustration of two people clapping hands">
+          <img
+            src="../survey-form-FreeCodeCamp/assets/img/img-header.png"
+            alt="illustration of two people clapping hands"
+          />
         </div>
-    </header>
-    <main>
-      
-    </main>
+      </header>
+      <main>
+        <form id="survey-form">
+          <section>
+            <div class="form-group">
+              <label id="name-label" for="name">Firstname</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Firstname"
+                required
+              />
 
-    <footer></footer>
-    
-</body>
+              <label id="name-label" for="name">Lastname</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Lastname"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label id="email-label" for="e-mail">E-mail Adress</label>
+              <input
+                type="email"
+                name="e-mail"
+                id="e-mail"
+                placeholder="E-mail Adress"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="dropdown">Gender</label>
+              <select name="dropdown" id="dropdown">
+                <option disabled selected>Select your Gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+                <option value="notdeclare">Not Declare</option>
+              </select>
+
+              <label id="number-label" for="number">Age</label>
+              <input
+                type="number"
+                min="18"
+                max="120"
+                name="age"
+                id="number"
+                placeholder="Age"
+                required
+              />
+            </div>
+          </section>
+
+          <section>
+            <div class="form-group">
+              <label>Are you satisfied with our services?</label>
+              <div id="selection">
+                <label>
+                  <input type="radio" name="satisfactory" value="Excellent" />
+                  Excellent
+                </label>
+                <label>
+                  <input type="radio" name="satisfactory" value="Very Good" />
+                  Very Good
+                </label>
+                <label>
+                  <input type="radio" name="satisfactory" value="Good" />
+                  Good
+                </label>
+                <label>
+                  <input type="radio" name="satisfactory" value="Fair" />
+                  Fair
+                </label>
+                <label>
+                  <input type="radio" name="satisfactory" value="Poor" />
+                  Poor
+                </label>
+                <label>
+                  <input type="radio" name="satisfactory" value="Very Poor" />
+                  Very Poor
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <label>What are the things you like on our place?</label>
+            <div class="selection">
+              <label>
+                <input type="checkbox" name="selection" value="Service" />
+                Service
+              </label>
+              <label>
+                <input type="checkbox" name="selection" value="Service" />
+                Rooms
+              </label>
+              <label>
+                <input type="checkbox" name="selection" value="Service" />
+                Over all view of the place
+              </label>
+              <label>
+                <input type="checkbox" name="selection" value="Service" />
+                Food
+              </label>
+              <label>
+                <input type="checkbox" name="selection" value="Service" />
+                Personel
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="selection"
+                  value="All of the above."
+                />
+                All of the above
+              </label>
+            </div>
+          </section>
+
+          <section>
+            <div class="form-group">
+              <label for="suggestion">Do you have any suggestion?</label>
+              <textarea
+                name="suggestion"
+                id="suggestion"
+                placeholder="Ideas are awesome!"
+              ></textarea>
+            </div>
+          </section>
+
+          <section class="form-group">
+            <button id="submit">Submit</button>
+          </section>
+        </form>
+      </main>
+
+      <footer>
+        <div class="icons">
+          <a
+            title="Free Code Camp"
+            href="https://www.freecodecamp.org/carlabruckmann"
+            class="fab fa-free-code-camp"
+          ></a>
+          <a
+            title="GitHub"
+            href="https://github.com/CarlaBruckmann"
+            class="fab fa-github"
+          ></a>
+          <a
+            title="Linkedin"
+            href="https://www.linkedin.com/in/carla-bruckmann-271576ba/"
+            class="fab fa-linkedin"
+          ></a>
+        </div>
+      </footer>
+
+      <script
+        src="https://kit.fontawesome.com/ec6c9f4d17.js"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
 </html>
