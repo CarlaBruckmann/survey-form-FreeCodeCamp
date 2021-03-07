@@ -35,12 +35,14 @@
       <title>Survey Form</title>
     </head>
     <body>
+      <div id="wrapper-main">
       <header>
-        <div class="display-flex">
+        <div class="d-flex-row">
           <div id="wrapper-title" class="wrapper-title">
             <h1 id="title">Survey!</h1>
             <p id="description">
-              We would like to hear your thoughts. Your feedback will be a great
+              We would like to hear your thoughts.<br>
+              Your feedback will be a great
               help to improve our services.
             </p>
           </div>
@@ -56,59 +58,68 @@
         <form id="survey-form">
           <section>
             <div class="form-group">
-              <label id="name-label" for="name">Firstname</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter your firstname"
-                required
-              />
-
-              <label id="name-label" for="name">Lastname</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter your lastname"
-                required
-              />
+              <div class="d-flex-column">
+                <label id="name-label" for="name">Firstname</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your firstname"
+                  required
+                />
+              </div>
+              <div class="d-flex-column">
+                <label id="name-label" for="name">Lastname</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your lastname"
+                  required
+                />
+              </div>
             </div>
           </section>
           <section>
             <div class="form-group">
-              <label id="email-label" for="email">E-mail Adress</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your e-mail adress"
-                required
-              />
+              <div class="d-flex-column">
+                <label id="email-label" for="email">E-mail Adress</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your e-mail adress"
+                  required
+                />
+              </div>
             </div>
           </section>
 
           <section>
             <div class="form-group">
-              <label for="dropdown">Gender</label>
-              <select name="dropdown" id="dropdown">
-                <option disabled selected>Select your Gender</option>
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-                <option value="other">Other</option>
-                <option value="notdeclare">Not Declare</option>
-              </select>
+              <div class="d-flex-column">
+                <label for="dropdown">Gender</label>
+                <select name="dropdown" id="dropdown">
+                  <option disabled selected>Select your Gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="other">Other</option>
+                  <option value="notdeclare">Not Declare</option>
+                </select>
+              </div>
 
-              <label id="number-label" for="number">Age</label>
-              <input
-                type="number"
-                min="18"
-                max="120"
-                name="age"
-                id="number"
-                placeholder="Age"
-                required
-              />
+              <div class="d-flex-column">
+                <label id="number-label" for="number">Age</label>
+                <input
+                  type="number"
+                  min="18"
+                  max="120"
+                  name="age"
+                  id="number"
+                  placeholder="Age"
+                  required
+                />
+              </div>
             </div>
           </section>
 
@@ -180,12 +191,14 @@
 
           <section>
             <div class="form-group">
-              <label for="suggestion">Do you have any suggestion?</label>
-              <textarea
-                name="suggestion"
-                id="suggestion"
-                placeholder="New ideas are awesome!"
-              ></textarea>
+              <div class="d-flex-column">
+                <label for="suggestion">Do you have any suggestion?</label>
+                <textarea
+                  name="suggestion"
+                  id="suggestion"
+                  placeholder="New ideas are awesome!"
+                ></textarea>
+              </div>
             </div>
           </section>
 
@@ -219,6 +232,7 @@
         src="https://kit.fontawesome.com/ec6c9f4d17.js"
         crossorigin="anonymous"
       ></script>
+    </div>  
     </body>
   </html>
 </html>

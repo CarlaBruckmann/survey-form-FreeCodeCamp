@@ -8,7 +8,6 @@
   --pink: rgba(242, 172, 197, 1);
   --blue: rgba(243, 248, 255, 0.62);
   --white: #ffffff;
-  --gradient: linear-gradient(180deg, #f4c6ff 0%, #e9fffa 88.54%);
 }
 
 * {
@@ -17,61 +16,75 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-body {
+
+#wrapper-main {
+  max-width: 1500px;
+  margin: 0 auto;
   background: var(--green);
 }
 
-header {
-  background: var(--gradient);
-
-}
-img{
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-
-}
-
-#survey-form, .display-flex
-{
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-h1 {
-  font-family:'Libre Baskerville';
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
-  color: var(--black-bold);
-  text-transform: uppercase;
-  margin-top: -30%;
-}
-
-p {
-  font-family:'Source Sans Pro';
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
+body {
+  font-family: "Source Sans Pro";
   color: var(--black-regular);
 }
 
-.display-flex{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
+header {
+  background: linear-gradient(180deg, #f4c6ff 0%, #e9fffa 100%);
 }
 
-header .display-flex .wrapper-title{
-    width: 50%;
+img {
+  max-width: 85%;
+  margin-left: 10%;
 }
 
-header .display-flex .wrapper-img{
-    overflow: hidden;
-    width: 50%;
+h1 {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  color: var(--black-bold);
+  text-transform: uppercase;
 }
-  
 
-  
+p {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 10px 0 0 3px;
+}
 
+#survey-form {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+header .d-flex-row {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header .d-flex-row .wrapper-title {
+  width: 50%;
+  margin: 2%;
+}
+
+header .d-flex-row .wrapper-img {
+  overflow: hidden;
+  width: 50%;
+}

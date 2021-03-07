@@ -1,0 +1,60 @@
+@media screen and (max-width: 1000px){
+    header .d-flex-row {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      p{
+          font-size:18px;
+          line-height: 25px;
+      }
+
+      h1{
+        font-size: 36px;
+        line-height: 40px;
+      }
+      
+      #survey-form {
+        width: 70%;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    header .d-flex-row {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      p{
+          font-size:14px;
+          line-height: 20px;
+      }
+
+      h1{
+        font-size: 24px;
+        line-height: 30px;
+      }
+      #survey-form {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    header .d-flex-row {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      header .d-flex-row .wrapper-title {
+        margin: 5%;
+      }
+      
+      #survey-form {
+        width: 100%;
+    }
+
+}
