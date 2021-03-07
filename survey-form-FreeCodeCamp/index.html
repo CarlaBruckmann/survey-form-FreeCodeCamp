@@ -36,18 +36,20 @@
     </head>
     <body>
       <header>
-        <div id="wrapper-title">
-          <h1 id="title">Survey!</h1>
-          <p id="description">
-            We would like to hear your thoughts. Your feedback will be a great
-            help to improve our services.
-          </p>
-        </div>
-        <div id="wrapper-img">
-          <img
-            src="../survey-form-FreeCodeCamp/assets/img/img-header.png"
-            alt="illustration of two people clapping hands"
-          />
+        <div class="display-flex">
+          <div id="wrapper-title" class="wrapper-title">
+            <h1 id="title">Survey!</h1>
+            <p id="description">
+              We would like to hear your thoughts. Your feedback will be a great
+              help to improve our services.
+            </p>
+          </div>
+          <div id="wrapper-img" class="wrapper-img">
+            <img
+              src="../survey-form-FreeCodeCamp/assets/img/img-header.png"
+              alt="illustration of two people clapping hands"
+            />
+          </div>
         </div>
       </header>
       <main>
@@ -59,7 +61,7 @@
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Firstname"
+                placeholder="Enter your firstname"
                 required
               />
 
@@ -68,22 +70,25 @@
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Lastname"
+                placeholder="Enter your lastname"
                 required
               />
             </div>
-
+          </section>
+          <section>
             <div class="form-group">
-              <label id="email-label" for="e-mail">E-mail Adress</label>
+              <label id="email-label" for="email">E-mail Adress</label>
               <input
                 type="email"
-                name="e-mail"
-                id="e-mail"
-                placeholder="E-mail Adress"
+                name="email"
+                id="email"
+                placeholder="Enter your e-mail adress"
                 required
               />
             </div>
+          </section>
 
+          <section>
             <div class="form-group">
               <label for="dropdown">Gender</label>
               <select name="dropdown" id="dropdown">

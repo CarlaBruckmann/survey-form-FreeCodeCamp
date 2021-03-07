@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+
+:root {
+  --black-regular: rgba(24, 29, 38, 1);
+  --black-bold: rgba(1, 6, 38, 1);
+  --green: rgba(233, 255, 250, 1);
+  --pink: rgba(242, 172, 197, 1);
+  --blue: rgba(243, 248, 255, 0.62);
+  --white: #ffffff;
+  --gradient: linear-gradient(180deg, #f4c6ff 0%, #e9fffa 88.54%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background: var(--green);
+}
+
+header {
+  background: var(--gradient);
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+#survey-form, .display-flex
+{
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family:'Libre Baskerville';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--black-bold);
+  text-transform: uppercase;
+  margin-top: -30%;
+}
+
+p {
+  font-family:'Source Sans Pro';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--black-regular);
+}
+
+.display-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+header .display-flex .wrapper-title{
+    width: 50%;
+}
+
+header .display-flex .wrapper-img{
+    overflow: hidden;
+    width: 50%;
+}
+  
+
+  
+
