@@ -8,6 +8,7 @@
   --pink: rgba(242, 172, 197, 1);
   --blue: rgba(243, 248, 255, 0.62);
   --white: #ffffff;
+  --pourple: #f4c6ff;
 }
 
 * {
@@ -52,6 +53,7 @@ input, select, textarea, option{
   border: 2px solid var(--pink);
   border-radius: 5px;
   background-color: var(--blue);
+  padding: 5px;
 }
 
 #wrapper-main {
@@ -85,8 +87,9 @@ input, select, textarea, option{
 }
 
 #suggestion{
-  height: 250px;
+  height: 100px;
 }
+
 .d-flex-row {
   display: flex;
   flex-direction: row;
@@ -104,7 +107,6 @@ input, select, textarea, option{
   width: 50%;
 }
 
-
 header .d-flex-row {
   width: 60%;
   margin: 0 auto;
@@ -119,4 +121,22 @@ header .d-flex-row .wrapper-title {
 header .d-flex-row .wrapper-img {
   overflow: hidden;
   width: 50%;
+}
+
+
+
+footer .icons {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-size: 20pt;
+}
+
+footer a {
+  padding: 15px;
+  color: var(--pourple);
+}
+
+footer a:hover {
+  color: var(--pink);
 }
