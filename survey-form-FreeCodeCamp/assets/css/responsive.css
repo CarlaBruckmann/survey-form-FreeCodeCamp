@@ -20,6 +20,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 700px) {
   header .d-flex-row {
     width: 80%;
@@ -42,6 +44,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 500px) {
   header .d-flex-row {
     width: 90%;
@@ -54,6 +58,7 @@
 
   #survey-form {
     width: 100%;
+    box-shadow: 0px -4px 1em rgba(155, 201, 191, 0.3), 0px 5px 1em rgba(155, 201, 191, 0.3);
   }
 
   #survey-form .d-flex-row {
