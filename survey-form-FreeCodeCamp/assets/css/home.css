@@ -17,11 +17,7 @@
   text-decoration: none;
 }
 
-#wrapper-main {
-  max-width: 1500px;
-  margin: 0 auto;
-  background: var(--green);
-}
+
 
 body {
   font-family: "Source Sans Pro";
@@ -52,19 +48,43 @@ p {
   padding: 10px 0 0 3px;
 }
 
+input, select, textarea, option{
+  border: 2px solid var(--pink);
+  border-radius: 5px;
+  background-color: var(--blue);
+}
+
+#wrapper-main {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: var(--green);
+}
+
 #survey-form {
   width: 60%;
   margin: 0 auto;
   overflow: hidden;
   background-color: var(--white);
   border-radius: 20px;
+  font-size: 18px;
 }
+
+#name, #email, #dropdown, #number, #suggestion{
+  width: 100%;
+  height: 35px;
+  font-family: "Source Sans Pro";
+  color: var(--black-regular);
+  font-size: 16px;
+}
+
+#wrapper-form-info {
+  margin: 8%;
+}
+
 
 .d-flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .d-flex-column {
@@ -72,11 +92,18 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 10px;
 }
+
+.two-column{
+  width: 50%;
+}
+
 
 header .d-flex-row {
   width: 60%;
   margin: 0 auto;
+  align-items: flex-end;
 }
 
 header .d-flex-row .wrapper-title {
