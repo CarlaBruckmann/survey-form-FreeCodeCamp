@@ -8,7 +8,7 @@
   --pink: rgba(242, 172, 197, 1);
   --blue: rgba(243, 248, 255, 0.62);
   --white: #ffffff;
-  --pourple: #f4c6ff;
+  --purple: #f4c6ff;
 }
 
 * {
@@ -47,11 +47,32 @@ p {
   padding: 10px 0 0 3px;
 }
 
-input, select, textarea, option{
+input,
+select,
+textarea,
+option {
   border: 2px solid var(--pink);
   border-radius: 5px;
   background-color: var(--blue);
   padding: 5px;
+}
+
+button {
+  font-family: "Source Sans Pro";
+  color: var(--black-regular);
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: var(--pink);
+  border: solid 1px var(--pink);
+  border-radius: 5px;
+  padding: 6px 40px;
+  cursor: pointer;
+  transition: 0.4s ease all;
+}
+
+button:hover {
+  background-color: var(--purple);
+  border: solid 1px var(--purple);
 }
 
 #wrapper-main {
@@ -67,25 +88,33 @@ input, select, textarea, option{
   background-color: var(--white);
   border-radius: 20px;
   font-size: 18px;
-  box-shadow: 12px 15px .7em rgba(155, 201, 191, 0.3), -2px -3px .7em rgba(155, 201, 191, 0.3);
+  box-shadow: 12px 15px 0.7em rgba(155, 201, 191, 0.3),
+    -2px -3px 0.7em rgba(155, 201, 191, 0.3);
 }
 
 #wrapper-form-info {
   margin: 8%;
 }
 
-#name, #email, #dropdown, #number, #suggestion{
+#name,
+#email,
+#dropdown,
+#number,
+#suggestion {
   width: 100%;
   font-family: "Source Sans Pro";
   color: var(--black-regular);
   font-size: 16px;
 }
 
-#name, #email, #dropdown, #number{
+#name,
+#email,
+#dropdown,
+#number {
   height: 40px;
 }
 
-#suggestion{
+#suggestion {
   height: 100px;
 }
 
@@ -102,10 +131,15 @@ input, select, textarea, option{
   padding: 10px;
 }
 
-.two-column{
+.two-column {
   width: 50%;
 }
 
+.wrapper-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
 
 header .d-flex-row {
   width: 60%;
@@ -123,8 +157,6 @@ header .d-flex-row .wrapper-img {
   width: 50%;
 }
 
-
-
 footer .icons {
   display: flex;
   justify-content: center;
@@ -134,7 +166,7 @@ footer .icons {
 
 footer a {
   padding: 15px;
-  color: var(--pourple);
+  color: var(--purple);
 }
 
 footer a:hover {
