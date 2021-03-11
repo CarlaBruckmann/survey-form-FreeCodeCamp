@@ -119,7 +119,7 @@ button:hover {
 }
 
 #suggestion {
-  height: 100px;
+  height: 150px;
 }
 
 .font-form {
@@ -209,6 +209,10 @@ button:hover {
 
 .checkbox:checked + .checkbox-label:before {
   background-color: var(--pink);
+}
+
+.suggestion-label{
+  margin-top: 15px;
 }
 
 .wrapper-button {
