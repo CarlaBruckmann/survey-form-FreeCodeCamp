@@ -43,11 +43,11 @@
             <div class="form-group d-flex-row">
               <div class="d-flex-column two-column">
                 <label id="name-label" for="name">Firstname</label>
-                <input type="text" name="name" id="name" placeholder="Enter your firstname" required />
+                <input type="text" class="font-form" name="name" id="name" placeholder="Enter your firstname" required />
               </div>
               <div class="d-flex-column two-column">
                 <label id="name-label" for="name">Lastname</label>
-                <input type="text" name="name" id="name" placeholder="Enter your lastname" required />
+                <input type="text" class="font-form" name="name" id="name" placeholder="Enter your lastname" required />
               </div>
             </div>
           </section>
@@ -55,7 +55,7 @@
             <div class="form-group">
               <div class="d-flex-column">
                 <label id="email-label" for="email">E-mail Adress</label>
-                <input type="email" name="email" id="email" placeholder="Enter your e-mail adress" required />
+                <input type="email" class="font-form" name="email" id="email" placeholder="Enter your e-mail adress" required />
               </div>
             </div>
           </section>
@@ -64,7 +64,7 @@
             <div class="form-group d-flex-row">
               <div class="d-flex-column two-column">
                 <label for="dropdown">Gender</label>
-                <select name="dropdown" id="dropdown">
+                <select class="font-form" name="dropdown" id="dropdown">
                   <option disabled selected>Select your Gender</option>
                   <option value="female">Female</option>
                   <option value="male">Male</option>
@@ -75,7 +75,7 @@
 
               <div class="d-flex-column two-column">
                 <label id="number-label" for="number">Age</label>
-                <input type="number" min="18" max="120" name="age" id="number" placeholder="Age" required />
+                <input type="number" class="font-form" min="18" max="120" name="age" id="number" placeholder="Age" required />
               </div>
             </div>
           </section>
@@ -83,7 +83,7 @@
           <section>
             <div class="form-group">
               <legend>Are you satisfied with our services?</legend>
-              <div id="selection" class="d-grid">
+              <div id="selection" class="d-grid font-form">
                 <div class="wrapper-radio">
                   <input type="radio" class="radio" id="radio-excellent" name="radio" value="Excellent" />
                   <label for="radio-excellent" class="radio-label">Excellent</label>
@@ -115,7 +115,7 @@
           <section>
             <div class="form-group">
               <legend>What are the things you like on our place?</legend>
-              <div class="d-grid">
+              <div class="d-grid font-form">
                 <div class="wrapper-checkbox">
                   <input type="checkbox" class="checkbox" id="selection-service" name="checkbox" value="Service" />
                   <label for="selection-service" class="checkbox-label">Service</label>
@@ -150,7 +150,7 @@
             <div class="form-group">
               <div class="d-flex-column">
                 <label for="suggestion">Do you have any suggestion?</label>
-                <textarea name="suggestion" id="suggestion" placeholder="New ideas are awesome!"></textarea>
+                <textarea class="font-form" name="suggestion" id="suggestion" placeholder="New ideas are awesome!"></textarea>
               </div>
             </div>
           </section>

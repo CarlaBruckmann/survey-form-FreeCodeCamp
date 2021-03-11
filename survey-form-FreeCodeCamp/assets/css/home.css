@@ -9,6 +9,7 @@
   --blue: rgba(243, 248, 255, 0.62);
   --white: #ffffff;
   --purple: #f4c6ff;
+
 }
 
 * {
@@ -109,9 +110,6 @@ button:hover {
 #number,
 #suggestion {
   width: 100%;
-  font-family: "Source Sans Pro";
-  color: var(--black-regular);
-  font-size: 16px;
 }
 
 #name,
@@ -123,6 +121,12 @@ button:hover {
 
 #suggestion {
   height: 100px;
+}
+
+.font-form{
+  font-family: "Source Sans Pro";
+  color: var(--black-regular);
+  font-size: 16px;
 }
 
 .d-flex-row {
@@ -148,7 +152,6 @@ button:hover {
   grid-gap: 10px;
   justify-items: start;
   margin: 0 10px 10px 10px;
-  font-size: 16px;
 }
 
 .wrapper-checkbox,
