@@ -50,7 +50,9 @@ p {
 input,
 select,
 textarea,
-option, .wrapper-checkbox, .wrapper-radio {
+option,
+.wrapper-checkbox,
+.wrapper-radio {
   border: 2px solid var(--pink);
   border-radius: 5px;
   background-color: var(--blue);
@@ -59,7 +61,7 @@ option, .wrapper-checkbox, .wrapper-radio {
 }
 
 legend {
-  margin: 30px 0 0 10px;
+  padding: 30px 0 2px 10px;
 }
 
 button {
@@ -123,7 +125,6 @@ button:hover {
   height: 100px;
 }
 
-
 .d-flex-row {
   display: flex;
   flex-direction: row;
@@ -141,7 +142,7 @@ button:hover {
   width: 50%;
 }
 
-.d-grid{
+.d-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
@@ -150,13 +151,14 @@ button:hover {
   font-size: 16px;
 }
 
-.wrapper-checkbox, .wrapper-radio{
- width: 100%;
- padding: 10px;
+.wrapper-checkbox,
+.wrapper-radio {
+  width: 100%;
+  padding: 10px;
 }
 
 .checkbox {
-display: none;
+  display: none;
 }
 
 .checkbox-label {
@@ -171,21 +173,19 @@ display: none;
   height: 10px;
   width: 10px;
   background-color: var(--white);
-  color:var(--white);
+  color: var(--white);
   text-align: center;
   border: 2px solid var(--pink);
   border-radius: 2px;
   margin-right: 8px;
   font-size: 10px;
+  line-height: 10px;
   transition: 0.3s ease-in-out;
 }
 
 .checkbox:checked + .checkbox-label:before {
   background-color: var(--pink);
-  
 }
-
-
 
 .wrapper-button {
   display: flex;
@@ -224,5 +224,3 @@ footer a {
 footer a:hover {
   color: var(--pink);
 }
-
-

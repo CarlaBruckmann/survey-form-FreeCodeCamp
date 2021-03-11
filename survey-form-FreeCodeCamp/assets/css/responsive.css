@@ -20,9 +20,7 @@
   }
 }
 
-
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   header .d-flex-row {
     width: 80%;
     margin: 0 auto;
@@ -42,11 +40,21 @@
     width: 80%;
     font-size: 14px;
   }
+
+  #name,
+  #email,
+  #dropdown,
+  #number,
+  #suggestion {
+    font-size: 14px;
+  }
+
+  .d-grid {
+    font-size: 14px;
+  }
 }
 
-
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   header .d-flex-row {
     width: 90%;
     margin: 0 auto;
@@ -58,7 +66,8 @@
 
   #survey-form {
     width: 100%;
-    box-shadow: 0px -4px 1em rgba(155, 201, 191, 0.3), 0px 5px 1em rgba(155, 201, 191, 0.3);
+    box-shadow: 0px -4px 1em rgba(155, 201, 191, 0.3),
+      0px 5px 1em rgba(155, 201, 191, 0.3);
   }
 
   #survey-form .d-flex-row {
@@ -66,5 +75,8 @@
   }
   .two-column {
     width: 100%;
+  }
+  .d-grid {
+    grid-template-columns: 1fr;
   }
 }
