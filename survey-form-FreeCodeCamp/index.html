@@ -1,281 +1,179 @@
 <!DOCTYPE html>
 <html>
-  <!DOCTYPE html>
-  <html lang="pt-br">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="author" content="Carla Bruckmann" />
-      <link
-        rel="stylesheet"
-        href="../survey-form-FreeCodeCamp/assets/css/style.css"
-      />
+<!DOCTYPE html>
+<html lang="pt-br">
 
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="../survey-form-FreeCodeCamp/assets/layout/favicon/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="../survey-form-FreeCodeCamp/assets/layout/favicon/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="../survey-form-FreeCodeCamp/assets/layout/favicon/favicon-16x16.png"
-      />
-      <link
-        rel="manifest"
-        href="../survey-form-FreeCodeCamp/assets/layout/favicon/site.webmanifest"
-      />
-      <title>Survey Form</title>
-    </head>
-    <body>
-      <div id="wrapper-main">
-        <header>
-          <div class="d-flex-row">
-            <div id="wrapper-title" class="wrapper-title">
-              <h1 id="title">Survey!</h1>
-              <p id="description">
-                We would like to hear your thoughts.<br />
-                Your feedback will be a great help to improve our services.
-              </p>
-            </div>
-            <div id="wrapper-img" class="wrapper-img">
-              <img
-                src="../survey-form-FreeCodeCamp/assets/img/img-header.png"
-                alt="illustration of two people clapping hands"
-              />
-            </div>
-          </div>
-        </header>
-        <main>
-          <form id="survey-form">
-            <div id="wrapper-form-info">
-              <section>
-                <div class="form-group d-flex-row">
-                  <div class="d-flex-column two-column">
-                    <label id="name-label" for="name">Firstname</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Enter your firstname"
-                      required
-                    />
-                  </div>
-                  <div class="d-flex-column two-column">
-                    <label id="name-label" for="name">Lastname</label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Enter your lastname"
-                      required
-                    />
-                  </div>
-                </div>
-              </section>
-              <section>
-                <div class="form-group">
-                  <div class="d-flex-column">
-                    <label id="email-label" for="email">E-mail Adress</label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Enter your e-mail adress"
-                      required
-                    />
-                  </div>
-                </div>
-              </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Carla Bruckmann" />
+  <link rel="stylesheet" href="../survey-form-FreeCodeCamp/assets/css/style.css" />
 
-              <section>
-                <div class="form-group d-flex-row">
-                  <div class="d-flex-column two-column">
-                    <label for="dropdown">Gender</label>
-                    <select name="dropdown" id="dropdown">
-                      <option disabled selected>Select your Gender</option>
-                      <option value="female">Female</option>
-                      <option value="male">Male</option>
-                      <option value="other">Other</option>
-                      <option value="notdeclare">Not Declare</option>
-                    </select>
-                  </div>
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="../survey-form-FreeCodeCamp/assets/layout/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="../survey-form-FreeCodeCamp/assets/layout/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="../survey-form-FreeCodeCamp/assets/layout/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="../survey-form-FreeCodeCamp/assets/layout/favicon/site.webmanifest" />
+  <title>Survey Form</title>
+</head>
 
-                  <div class="d-flex-column two-column">
-                    <label id="number-label" for="number">Age</label>
-                    <input
-                      type="number"
-                      min="18"
-                      max="120"
-                      name="age"
-                      id="number"
-                      placeholder="Age"
-                      required
-                    />
-                  </div>
-                </div>
-              </section>
-
-              <section>
-                <div class="form-group">
-                  <legend>Are you satisfied with our services?</legend>
-                  <div id="selection">
-                    <label>
-                      <input
-                        type="radio"
-                        name="satisfactory"
-                        value="Excellent"
-                      />
-                      Excellent
-                    </label>
-                    <label>
-                      <input
-                        type="radio"
-                        name="satisfactory"
-                        value="Very Good"
-                      />
-                      Very Good
-                    </label>
-                    <label>
-                      <input type="radio" name="satisfactory" value="Good" />
-                      Good
-                    </label>
-                    <label>
-                      <input type="radio" name="satisfactory" value="Fair" />
-                      Fair
-                    </label>
-                    <label>
-                      <input type="radio" name="satisfactory" value="Poor" />
-                      Poor
-                    </label>
-                    <label>
-                      <input
-                        type="radio"
-                        name="satisfactory"
-                        value="Very Poor"
-                      />
-                      Very Poor
-                    </label>
-                  </div>
-                </div>
-              </section>
-
-              <section>
-                <div class="form-group">
-                  <legend>What are the things you like on our place?</legend>
-                  <div class="selection checkbox-container">
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        name="selection"
-                        value="Service"
-                      />
-                      <label for="selection">Service</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        name="selection"
-                        value="Rooms"
-                      />
-                      <label for="selection">Rooms</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        name="selection"
-                        value="Over all view of the place"
-                      />
-                      <label for="selection">Over all view of the place</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        name="selection"
-                        value="Food"
-                      />
-                      <label for="selection">Food </label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        name="selection"
-                        value="Personel"
-                      />
-                      <label for="selection">Personel</label>
-                    </div>
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        name="selection"
-                        value="All of the above"
-                      />
-                      <label for="selection">All of the above</label>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section>
-                <div class="form-group">
-                  <div class="d-flex-column">
-                    <label for="suggestion">Do you have any suggestion?</label>
-                    <textarea
-                      name="suggestion"
-                      id="suggestion"
-                      placeholder="New ideas are awesome!"
-                    ></textarea>
-                  </div>
-                </div>
-              </section>
-
-              <section class="form-group">
-                <div class="wrapper-button">
-                  <button id="submit">Submit</button>
-                </div>
-              </section>
-            </div>
-          </form>
-        </main>
-
-        <footer>
-          <div class="icons">
-            <a
-              title="Free Code Camp"
-              href="https://www.freecodecamp.org/carlabruckmann"
-              class="fab fa-free-code-camp"
-            ></a>
-            <a
-              title="GitHub"
-              href="https://github.com/CarlaBruckmann"
-              class="fab fa-github"
-            ></a>
-            <a
-              title="Linkedin"
-              href="https://www.linkedin.com/in/carla-bruckmann-271576ba/"
-              class="fab fa-linkedin"
-            ></a>
-          </div>
-        </footer>
-
-        <script
-          src="https://kit.fontawesome.com/ec6c9f4d17.js"
-          crossorigin="anonymous"
-        ></script>
+<body>
+  <div id="wrapper-main">
+    <header>
+      <div class="d-flex-row">
+        <div id="wrapper-title" class="wrapper-title">
+          <h1 id="title">Survey!</h1>
+          <p id="description">
+            We would like to hear your thoughts.<br />
+            Your feedback will be a great help to improve our services.
+          </p>
+        </div>
+        <div id="wrapper-img" class="wrapper-img">
+          <img src="../survey-form-FreeCodeCamp/assets/img/img-header.png"
+            alt="illustration of two people clapping hands" />
+        </div>
       </div>
-    </body>
-  </html>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div id="wrapper-form-info">
+          <section>
+            <div class="form-group d-flex-row">
+              <div class="d-flex-column two-column">
+                <label id="name-label" for="name">Firstname</label>
+                <input type="text" name="name" id="name" placeholder="Enter your firstname" required />
+              </div>
+              <div class="d-flex-column two-column">
+                <label id="name-label" for="name">Lastname</label>
+                <input type="text" name="name" id="name" placeholder="Enter your lastname" required />
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="form-group">
+              <div class="d-flex-column">
+                <label id="email-label" for="email">E-mail Adress</label>
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail adress" required />
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="form-group d-flex-row">
+              <div class="d-flex-column two-column">
+                <label for="dropdown">Gender</label>
+                <select name="dropdown" id="dropdown">
+                  <option disabled selected>Select your Gender</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="other">Other</option>
+                  <option value="notdeclare">Not Declare</option>
+                </select>
+              </div>
+
+              <div class="d-flex-column two-column">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" min="18" max="120" name="age" id="number" placeholder="Age" required />
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="form-group">
+              <legend>Are you satisfied with our services?</legend>
+              <div id="selection radio-container">
+                <div>
+                  <input type="radio" name="satisfactory" value="Excellent" />
+                  <label for="satisfactory">Excellent</label>
+                </div>
+                <div>
+                  <input type="radio" name="satisfactory" value="Very Good" />
+                  <label for="satisfactory">Very Good</label>
+                </div>
+                <div>
+                  <input type="radio" name="satisfactory" value="Good" />
+                  <label for="satisfactory">Good</label>
+                </div>
+                <div>
+                  <input type="radio" name="satisfactory" value="Fair" />
+                  <label for="satisfactory">Fair</label>
+                </div>
+                <div>
+                  <input type="radio" name="satisfactory" value="Poor" />
+                  <label for="satisfactory">Poor</label>
+                </div>
+                <div>
+                  <input type="radio" name="satisfactory" value="Very Poor" />
+                  <label for="satisfactory">Very Poor</label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="form-group">
+              <legend>What are the things you like on our place?</legend>
+              <div class="selection checkbox-container">
+                <div>
+                  <input type="checkbox" id="checkbox" name="selection" value="Service" />
+                  <label for="selection">Service</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="checkbox" name="selection" value="Rooms" />
+                  <label for="selection">Rooms</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="checkbox" name="selection" value="Over all view of the place" />
+                  <label for="selection">Over all view of the place</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="checkbox" name="selection" value="Food" />
+                  <label for="selection">Food </label>
+                </div>
+                <div>
+                  <input type="checkbox" id="checkbox" name="selection" value="Personel" />
+                  <label for="selection">Personel</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="checkbox" name="selection" value="All of the above" />
+                  <label for="selection">All of the above</label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="form-group">
+              <div class="d-flex-column">
+                <label for="suggestion">Do you have any suggestion?</label>
+                <textarea name="suggestion" id="suggestion" placeholder="New ideas are awesome!"></textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-group">
+            <div class="wrapper-button">
+              <button id="submit">Submit</button>
+            </div>
+          </section>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="icons">
+        <a title="Free Code Camp" href="https://www.freecodecamp.org/carlabruckmann" class="fab fa-free-code-camp"></a>
+        <a title="GitHub" href="https://github.com/CarlaBruckmann" class="fab fa-github"></a>
+        <a title="Linkedin" href="https://www.linkedin.com/in/carla-bruckmann-271576ba/" class="fab fa-linkedin"></a>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/ec6c9f4d17.js" crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>
+
 </html>
