@@ -57,7 +57,7 @@ option,
   border: 2px solid var(--pink);
   border-radius: 5px;
   background-color: var(--blue);
-  padding: 5px;
+  padding: 8px;
   margin-top: 5px;
 }
 
@@ -119,9 +119,11 @@ button:hover {
   height: 40px;
 }
 
+
 #suggestion {
   height: 100px;
 }
+
 
 .font-form{
   font-family: "Source Sans Pro";

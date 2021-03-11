@@ -39,8 +39,8 @@
     <main>
       <form id="survey-form">
         <div id="wrapper-form-info">
-          <section>
-            <div class="form-group d-flex-row">
+          <section class="container-name">
+            <div class="d-flex-row">
               <div class="d-flex-column two-column">
                 <label id="name-label" for="name">Firstname</label>
                 <input type="text" class="font-form" name="name" id="name" placeholder="Enter your firstname" required />
@@ -51,16 +51,15 @@
               </div>
             </div>
           </section>
-          <section>
-            <div class="form-group">
+          <section class="container-email">
+            <div>
               <div class="d-flex-column">
                 <label id="email-label" for="email">E-mail Adress</label>
                 <input type="email" class="font-form" name="email" id="email" placeholder="Enter your e-mail adress" required />
               </div>
             </div>
           </section>
-
-          <section>
+          <section class="container-dropdown-number">
             <div class="form-group d-flex-row">
               <div class="d-flex-column two-column">
                 <label for="dropdown">Gender</label>
@@ -79,9 +78,8 @@
               </div>
             </div>
           </section>
-
-          <section>
-            <div class="form-group">
+          <section class="container-radio">
+            <div>
               <legend>Are you satisfied with our services?</legend>
               <div id="selection" class="d-grid font-form">
                 <div class="wrapper-radio">
@@ -111,9 +109,8 @@
               </div>
             </div>
           </section>
-
-          <section>
-            <div class="form-group">
+          <section class="container-checkbox">
+            <div>
               <legend>What are the things you like on our place?</legend>
               <div class="d-grid font-form">
                 <div class="wrapper-checkbox">
@@ -145,17 +142,15 @@
               </div>
             </div>
           </section>
-
-          <section>
-            <div class="form-group">
+          <section class="container-suggestion">
+            <div>
               <div class="d-flex-column">
                 <label for="suggestion">Do you have any suggestion?</label>
                 <textarea class="font-form" name="suggestion" id="suggestion" placeholder="New ideas are awesome!"></textarea>
               </div>
             </div>
           </section>
-
-          <section class="form-group">
+          <section class="container-button">
             <div class="wrapper-button">
               <button id="submit">Submit</button>
             </div>
