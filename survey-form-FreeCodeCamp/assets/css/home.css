@@ -50,7 +50,7 @@ p {
 input,
 select,
 textarea,
-option, .wrapper-checkbox {
+option, .wrapper-checkbox, .wrapper-radio {
   border: 2px solid var(--pink);
   border-radius: 5px;
   background-color: var(--blue);
@@ -59,7 +59,7 @@ option, .wrapper-checkbox {
 }
 
 legend {
-  margin-left: 10px;
+  margin: 30px 0 0 10px;
 }
 
 button {
@@ -123,6 +123,7 @@ button:hover {
   height: 100px;
 }
 
+
 .d-flex-row {
   display: flex;
   flex-direction: row;
@@ -147,6 +148,11 @@ button:hover {
   justify-items: start;
   margin: 0 10px 10px 10px;
   font-size: 16px;
+}
+
+.wrapper-checkbox, .wrapper-radio{
+ width: 100%;
+ padding: 10px;
 }
 
 .checkbox {
@@ -178,10 +184,8 @@ display: none;
   background-color: var(--pink);
   
 }
-.wrapper-checkbox{
- width: 100%;
- padding: 10px;
-}
+
+
 
 .wrapper-button {
   display: flex;
