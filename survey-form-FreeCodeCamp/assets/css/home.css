@@ -9,7 +9,6 @@
   --blue: rgba(243, 248, 255, 0.62);
   --white: #ffffff;
   --purple: #f4c6ff;
-
 }
 
 * {
@@ -119,13 +118,11 @@ button:hover {
   height: 40px;
 }
 
-
 #suggestion {
   height: 100px;
 }
 
-
-.font-form{
+.font-form {
   font-family: "Source Sans Pro";
   color: var(--black-regular);
   font-size: 16px;
@@ -162,11 +159,13 @@ button:hover {
   padding: 10px;
 }
 
-.checkbox {
+.checkbox,
+.radio {
   display: none;
 }
 
-.checkbox-label {
+.checkbox-label,
+.radio-label {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -184,8 +183,28 @@ button:hover {
   border-radius: 2px;
   margin-right: 8px;
   font-size: 10px;
-  line-height: 10px;
+  line-height: 11px;
   transition: 0.3s ease-in-out;
+}
+
+.radio-label:before {
+  content: "\25CE";
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: var(--white);
+  color: var(--white);
+  text-align: center;
+  border: 2px solid var(--pink);
+  border-radius: 50%;
+  margin-right: 8px;
+  font-size: 10px;
+  line-height: 11px;
+  transition: 0.3s ease-in-out;
+}
+
+.radio:checked + .radio-label:before {
+  background-color: var(--pink);
 }
 
 .checkbox:checked + .checkbox-label:before {
