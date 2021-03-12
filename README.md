@@ -13,15 +13,12 @@
 🌎  *[CodePen](https://codepen.io/carlabruckmann/pen/zYoyejV)* - *[freeCodeCamp](https://www.freecodecamp.org/carlabruckmann)* 
 
 [Preview - Home]
-
 ![Preview](home.png)
 
 [Test]
-
 ![Preview](test.png)
 
 [Preview - index.html]
-
 ![Preview](preview-index.png)
 
 [Preview - style.css]
