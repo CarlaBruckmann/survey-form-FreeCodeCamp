@@ -14,7 +14,7 @@
 
 [Preview - Home]
 
-![Preview](home.png)
+
 
 [Test]
 
