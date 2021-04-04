@@ -8,31 +8,15 @@
 
 ### :white_check_mark: Tecnologias utilizadas: `HTML5` e `CSS3`.
 
+🌎 *[Survey Form](https://bit.ly/3wuaLio)*
 
-
-🌎  *[CodePen](https://codepen.io/carlabruckmann/pen/zYoyejV)* - *[freeCodeCamp](https://www.freecodecamp.org/carlabruckmann)* 
+🌎  *[CodePen](https://bit.ly/3qyOWKw)* - *[freeCodeCamp](https://bit.ly/31P61FW)* 
 
 [Preview - Home]
-![Preview](home.png)
+<img src="https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png" alt="preview home" width="100%"/>
 
-
+<br>
 
 [Test]
 
-![Preview](test.png)
-
-[Preview - index.html]
-
-![Preview](preview-index.png)
-
-[Preview - style.css]
-
-![Preview](preview-style.png)
-
-[Preview - home.css]
-
-![Preview](preview-home.png)
-
-[Preview - responsive.css]
-
-![Preview](preview-responsive.png)
+<img src="https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/test.png" alt="test" width="100%"/>
