@@ -8,9 +8,9 @@
 
 ### :white_check_mark: Tecnologias utilizadas: `HTML5` e `CSS3`.
 
-🌎 *[Survey Form](https://bit.ly/3wuaLio)*
+#### 🌎 *[Survey Form](https://bit.ly/3wuaLio)*
 
-🌎  *[CodePen](https://bit.ly/3qyOWKw)* - *[freeCodeCamp](https://bit.ly/31P61FW)* 
+#### 🌎  *[CodePen](https://bit.ly/3qyOWKw)* - *[freeCodeCamp](https://bit.ly/31P61FW)* 
 
 [Preview - Home]
 <img src="https://github.com/CarlaBruckmann/survey-form-FreeCodeCamp/blob/master/preview/home.png" alt="preview home" width="100%"/>
